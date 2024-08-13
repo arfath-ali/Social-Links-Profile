@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(0, 0%, 20%);
+  --mediumgrey: hsl(0, 0%, 12%);
+  --darkgrey: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--darkgrey);
+  color: var(--white);
+  font-family: "inter", sans-serif;
+}
+
+.out {
+  width: calc(100vw - 20px);
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inn {
+  background-color: var(--mediumgrey);
+  width: 325px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 40px;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: -15px;
+}
+
+h1{
+    font-weight:500;
+    font-size: 1.3rem;
+    position: relative;
+    top: -45px;
+    text-align: center;
+}
+
+.add{
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-align: center;
+    position: relative;
+    top: -37px;
+    color: var(--green);
+}
+
+.desc{
+    font-weight: 200;
+    font-size: 0.75rem;
+    text-align: center;
+    position: relative;
+    top: -12px;
+}
+
+.gth,.fm,.ln,.x,.insta{   
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 13px 80px;
+    background-color: var(--lightgrey);
+    border-radius:8px;
+}
+
+.gth:hover{
+    background-color: var(--green);
+    color: var(--darkgrey);
+    cursor: pointer;
+}
+
+.fm:hover{
+    background-color: var(--green);
+    color: var(--darkgrey);
+    cursor: pointer;   
+}
+
+.ln:hover{
+  background-color: var(--green);
+  color: var(--darkgrey);
+  cursor: pointer;
+}
+
+.x:hover{
+  background-color: var(--green);
+  color: var(--darkgrey);
+  cursor: pointer;
+}
+
+.insta:hover{
+  background-color: var(--green);
+  color: var(--darkgrey);
+  cursor: pointer;
+}
+
+.gth{
+  position: relative;
+  top: -29px;
+}
+
+.fm{
+  position: relative;
+  top: -16px
+}
+
+.ln{
+  position: relative;
+  top: -3px
+}
+
+.x{
+  position: relative;
+  top: 10px
+}
+
+.insta{
+  position: relative;
+  top: 23px
+}
+
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px){
+  .out {
+    width: 100vw;
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
